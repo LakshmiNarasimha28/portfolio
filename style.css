@@ -248,3 +248,32 @@ button.btn:hover {
 .gallery-grid img:nth-child(odd) {
     transform: scale(0.97);
 }
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .skills-cards {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        padding: 3rem 1rem;
+    }
+}
