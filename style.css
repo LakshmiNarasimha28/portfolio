@@ -566,6 +566,21 @@ button.btn:hover {
         font-size: 0.95rem;
     }
 
+    .footer {
+        padding: 1.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -708,6 +723,20 @@ a, button, .project-card, .skill-card, .gallery-grid img {
         color: #0f172a;
         box-shadow: 0 0 12px rgba(96, 165, 250, 0.3);
     }
+
+    .footer {
+        background: #1a2332;
+        border-color: #334155;
+    }
+
+    .social-links a {
+        background: #3b82f6;
+    }
+
+    .social-links a:hover {
+        background: #60a5fa;
+        box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
+    }
 }
 
 /* FOOTER */
@@ -717,6 +746,7 @@ a, button, .project-card, .skill-card, .gallery-grid img {
     text-align: center;
     border-top: 1px solid var(--border-color);
     margin-top: 4rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .social-links {
@@ -750,4 +780,5 @@ a, button, .project-card, .skill-card, .gallery-grid img {
     color: var(--text-light);
     font-size: 0.9rem;
     margin-top: 1rem;
+    transition: color 0.3s ease;
 }
