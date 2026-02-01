@@ -2,34 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Home | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the home page.</p>
-
-
+    <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">MyPortfolio</div>
+        <div class="logo">Narasimha</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
+
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm Lakshmi</h1>
-            <p>Computer Science Student | AI & ML Enthusiast</p>
-            <a href="projects.html" class="btn">View My Work</a>
+            <h1>Hi, I'm Lakshmi Narasimha</h1>
+            <p>
+                Computer Science Engineering Student <br>
+                Specializing in Artificial Intelligence & Machine Learning
+            </p>
+            <a href="projects.html" class="btn">Explore My Projects</a>
         </div>
     </section>
 
+    <!-- ABOUT PREVIEW -->
+    <section class="home-about">
+        <h2>Who Am I?</h2>
+        <p>
+            I am a passionate Computer Science student with a strong interest in
+            Artificial Intelligence, Machine Learning, and Data Analysis.
+            I enjoy transforming ideas into practical applications and continuously
+            improving my problem-solving skills through projects and hands-on learning.
+        </p>
+        <a href="about.html" class="btn secondary-btn">Read More</a>
+    </section>
 
+    <!-- SKILLS SNAPSHOT -->
+    <section class="home-skills">
+        <h2>Core Skills</h2>
+
+        <div class="skills-cards">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Machine Learning</div>
+            <div class="skill-card">Data Analysis</div>
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Problem Solving</div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="home-projects">
+        <h2>Featured Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Image Classification System</h3>
+                <p>
+                    Built an image classification pipeline using CNN feature extraction
+                    (MobileNetV2) and SVM for accurate multi-class prediction.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Blockchain File Vault</h3>
+                <p>
+                    Designed a secure file storage system using blockchain principles
+                    to ensure data integrity and tamper resistance.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Credit Card Fraud Detection</h3>
+                <p>
+                    Applied machine learning techniques to identify fraudulent
+                    transactions through data preprocessing and model training.
+                </p>
+            </div>
+        </div>
+
+        <a href="projects.html" class="btn">View All Projects</a>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="home-contact">
+        <h2>Let’s Work Together</h2>
+        <p>
+            I am always open to learning opportunities, collaborations,
+            and new challenges. Feel free to reach out!
+        </p>
+        <a href="contact.html" class="btn">Contact Me</a>
+    </section>
+
+    <script src="theme-toggle.js"></script>
 </body>
 </html>
