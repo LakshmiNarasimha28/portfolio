@@ -218,3 +218,33 @@ button.btn:hover {
     background: #1e40af;
     cursor: pointer;
 }
+
+
+/* GALLERY SECTION */
+.gallery-section {
+    margin-top: 5rem;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* NTH-CHILD PSEUDO CLASS */
+.gallery-grid img:nth-child(odd) {
+    transform: scale(0.97);
+}
